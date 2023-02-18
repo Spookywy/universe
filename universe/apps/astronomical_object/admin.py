@@ -1,3 +1,5 @@
+from apps.astronomical_object.models import Planet, Star
 from django.contrib import admin
 
-# Register your models here.
+admin.site.register(Star)
+admin.site.register(Planet)

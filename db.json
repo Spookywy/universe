@@ -1,0 +1,40 @@
+[
+{
+  "model": "common.distance",
+  "pk": 1,
+  "fields": {
+    "value": 147850000,
+    "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.planetarysystem",
+  "pk": 1,
+  "fields": {
+    "name": "Solar system",
+    "star": 1
+  }
+},
+{
+  "model": "astronomical_object.star",
+  "pk": 1,
+  "fields": {
+    "name": "Sun",
+    "distanceFromEarth": 1,
+    "radius": 696342,
+    "surface_temperature": 5778,
+    "classification": "g"
+  }
+},
+{
+  "model": "astronomical_object.planet",
+  "pk": 1,
+  "fields": {
+    "name": "Earth",
+    "distanceFromEarth": null,
+    "radius": 6371,
+    "surface_temperature": 288,
+    "planetary_system": 1
+  }
+}
+]

@@ -1,10 +1,33 @@
-from apps.common.models import Distance
 from django.db import models
 
 
 class AstronomicalObject(models.Model):
+    name = models.CharField(max_length=255, verbose_name="Name")
     distanceFromEarth = models.ForeignKey(
-        Distance, on_delete=models.SET_NULL, null=True)
+        "common.Distance", on_delete=models.SET_NULL, null=True, blank=True, verbose_name="Distance from Earth")
+    radius = models.PositiveIntegerField(verbose_name="Radius")
+    surface_temperature = models.PositiveIntegerField(
+        verbose_name="Temperature of the surface (Kelvin)")
 
     class Meta:
         abstract = True
+
+
+class Star(AstronomicalObject):
+    CLASSES = [
+        ("o", "O"),
+        ("b", "B"),
+        ("a", "A"),
+        ("f", "F"),
+        ("g", "G"),
+        ("k", "K"),
+        ("m", "M"),
+    ]
+
+    classification = models.CharField(
+        max_length=255, choices=CLASSES, verbose_name="Classification")
+
+
+class Planet(AstronomicalObject):
+    planetary_system = models.ForeignKey(
+        "common.PlanetarySystem", on_delete=models.SET_NULL, null=True)
