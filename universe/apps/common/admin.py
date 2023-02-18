@@ -1,3 +1,5 @@
+from apps.common.models import Distance, PlanetarySystem
 from django.contrib import admin
 
-# Register your models here.
+admin.site.register(PlanetarySystem)
+admin.site.register(Distance)
