@@ -3,16 +3,102 @@
   "model": "common.distance",
   "pk": 1,
   "fields": {
-    "value": 147850000,
+    "value": "147850000",
     "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 2,
+  "fields": {
+    "value": "4347000000",
+    "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 3,
+  "fields": {
+    "value": "92000000",
+    "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 4,
+  "fields": {
+    "value": "1277000000",
+    "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 5,
+  "fields": {
+    "value": "628000000",
+    "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 7,
+  "fields": {
+    "value": "78000000",
+    "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 8,
+  "fields": {
+    "value": "42000000",
+    "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 9,
+  "fields": {
+    "value": "2720000000",
+    "unit_of_measure": "km"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 10,
+  "fields": {
+    "value": "4.364",
+    "unit_of_measure": "ly"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 11,
+  "fields": {
+    "value": "4.37",
+    "unit_of_measure": "ly"
+  }
+},
+{
+  "model": "common.distance",
+  "pk": 12,
+  "fields": {
+    "value": "4.246",
+    "unit_of_measure": "ly"
   }
 },
 {
   "model": "common.planetarysystem",
   "pk": 1,
   "fields": {
-    "name": "Solar system",
-    "star": 1
+    "name": "Solar System"
+  }
+},
+{
+  "model": "common.planetarysystem",
+  "pk": 2,
+  "fields": {
+    "name": "Alpha Centauri"
   }
 },
 {
@@ -21,9 +107,46 @@
   "fields": {
     "name": "Sun",
     "distanceFromEarth": 1,
-    "radius": 696342,
+    "radius": 696340,
     "surface_temperature": 5778,
-    "classification": "g"
+    "classification": "g",
+    "planetary_system": 1
+  }
+},
+{
+  "model": "astronomical_object.star",
+  "pk": 2,
+  "fields": {
+    "name": "Alpha Centauri A (Rigil Kentaurus)",
+    "distanceFromEarth": 10,
+    "radius": 851120,
+    "surface_temperature": 5790,
+    "classification": "g",
+    "planetary_system": 2
+  }
+},
+{
+  "model": "astronomical_object.star",
+  "pk": 3,
+  "fields": {
+    "name": "Alpha Centauri B (Toliman)",
+    "distanceFromEarth": 11,
+    "radius": 600790,
+    "surface_temperature": 5260,
+    "classification": "k",
+    "planetary_system": 2
+  }
+},
+{
+  "model": "astronomical_object.star",
+  "pk": 4,
+  "fields": {
+    "name": "Alpha Centauri C (Proxima Centauri)",
+    "distanceFromEarth": 12,
+    "radius": 107280,
+    "surface_temperature": 3042,
+    "classification": "m",
+    "planetary_system": 2
   }
 },
 {
@@ -34,6 +157,83 @@
     "distanceFromEarth": null,
     "radius": 6371,
     "surface_temperature": 288,
+    "planetary_system": 1
+  }
+},
+{
+  "model": "astronomical_object.planet",
+  "pk": 2,
+  "fields": {
+    "name": "Neptune",
+    "distanceFromEarth": 2,
+    "radius": 24622,
+    "surface_temperature": 72,
+    "planetary_system": 1
+  }
+},
+{
+  "model": "astronomical_object.planet",
+  "pk": 3,
+  "fields": {
+    "name": "Mercury",
+    "distanceFromEarth": 3,
+    "radius": 2439,
+    "surface_temperature": 440,
+    "planetary_system": 1
+  }
+},
+{
+  "model": "astronomical_object.planet",
+  "pk": 4,
+  "fields": {
+    "name": "Saturn",
+    "distanceFromEarth": 4,
+    "radius": 58232,
+    "surface_temperature": 134,
+    "planetary_system": 1
+  }
+},
+{
+  "model": "astronomical_object.planet",
+  "pk": 5,
+  "fields": {
+    "name": "Jupiter",
+    "distanceFromEarth": 5,
+    "radius": 69911,
+    "surface_temperature": 165,
+    "planetary_system": 1
+  }
+},
+{
+  "model": "astronomical_object.planet",
+  "pk": 6,
+  "fields": {
+    "name": "Mars",
+    "distanceFromEarth": 7,
+    "radius": 3389,
+    "surface_temperature": 210,
+    "planetary_system": 1
+  }
+},
+{
+  "model": "astronomical_object.planet",
+  "pk": 7,
+  "fields": {
+    "name": "Venus",
+    "distanceFromEarth": 8,
+    "radius": 6051,
+    "surface_temperature": 737,
+    "planetary_system": 1
+  }
+},
+{
+  "model": "astronomical_object.planet",
+  "pk": 8,
+  "fields": {
+    "name": "Uranus",
+    "distanceFromEarth": 9,
+    "radius": 25362,
+    "surface_temperature": 76,
     "planetary_system": 1
   }
 }

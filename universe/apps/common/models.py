@@ -7,7 +7,7 @@ class Distance(models.Model):
         ("ly", "Light Year"),
     ]
 
-    value = models.PositiveBigIntegerField(verbose_name="Value")
+    value = models.CharField(max_length=255, verbose_name="Value")
     unit_of_measure = models.CharField(
         max_length=255,
         choices=UNIT_OF_MEASURE,
@@ -15,12 +15,12 @@ class Distance(models.Model):
         verbose_name="Unit of measure",
     )
 
+    def __str__(self):
+        return f"{self.value} {self.unit_of_measure}"
+
 
 class PlanetarySystem(models.Model):
     name = models.CharField(max_length=255, verbose_name="Name")
-    star = models.OneToOneField(
-        "astronomical_object.Star",
-        on_delete=models.CASCADE,
-        related_name="planetary_system",
-        verbose_name="Star",
-    )
+
+    def __str__(self):
+        return self.name

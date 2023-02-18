@@ -7,7 +7,10 @@ class PlanetAdmin(admin.ModelAdmin):
     list_display = ("name", "planetary_system_name")
 
     def planetary_system_name(self, obj):
-        return obj.planetary_system.name
+        if obj.planetary_system:
+            return obj.planetary_system.name
+        return
+
     planetary_system_name.short_description = "Planetary system"
 
 
@@ -16,5 +19,8 @@ class StarAdmin(admin.ModelAdmin):
     list_display = ("name", "planetary_system_name")
 
     def planetary_system_name(self, obj):
-        return obj.planetary_system.name
+        if obj.planetary_system:
+            return obj.planetary_system.name
+        return
+
     planetary_system_name.short_description = "Planetary system"

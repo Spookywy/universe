@@ -9,6 +9,13 @@ class PlanetarySystemAdmin(admin.ModelAdmin):
     list_display = ("name", "star_name")
 
     def star_name(self, obj):
-        return obj.star.name
+        stars_set = obj.stars.all()
+        if not stars_set.exists():
+            return
 
-    star_name.short_description = "Star"
+        stars = []
+        for star in obj.stars.all():
+            stars.append(star.name)
+        return "/".join(stars)
+
+    star_name.short_description = "Stars"

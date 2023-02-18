@@ -10,13 +10,19 @@ Apply migrations:
 python universe/manage.py migrate
 ```
 
+Load the data (planets, stars, galaxies...):
+
+```
+python universe/manage.py loaddata db.json
+```
+
 Run server:
 
 ```
 python universe/manage.py runserver
 ```
 
-## Dump data / Load data
+## Dump data
 
 Dump data:
 
@@ -24,8 +30,6 @@ Dump data:
 python universe/manage.py dumpdata [apps name] --indent 2 > db.json
 ```
 
-Load data:
-
 ```
-python universe/manage.py loaddata db.json
+python universe/manage.py dumpdata common astronomical_object --indent 2 > db.json
 ```
