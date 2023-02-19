@@ -1,5 +1,6 @@
-from apps.common.models import Distance, PlanetarySystem
 from django.contrib import admin
+
+from .models import Distance, PlanetarySystem
 
 admin.site.register(Distance)
 
