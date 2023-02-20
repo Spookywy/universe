@@ -88,11 +88,140 @@
   }
 },
 {
+  "model": "common.mass",
+  "pk": 1,
+  "fields": {
+    "value": "(1.5±0.5)×10^12",
+    "unit_of_measure": "M☉"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 2,
+  "fields": {
+    "value": "1.15×10^12",
+    "unit_of_measure": "M☉"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 3,
+  "fields": {
+    "value": "1.0014",
+    "unit_of_measure": "M☉"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 4,
+  "fields": {
+    "value": "1.0788±0.0029",
+    "unit_of_measure": "M☉"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 5,
+  "fields": {
+    "value": "8.681×10^25",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 6,
+  "fields": {
+    "value": "4.867×10^24",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 7,
+  "fields": {
+    "value": "6.39×10^23",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 8,
+  "fields": {
+    "value": "1.898×10^27",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 9,
+  "fields": {
+    "value": "5.683×10^26",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 10,
+  "fields": {
+    "value": "3.285×10^23",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 11,
+  "fields": {
+    "value": "1.024×10^26",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 12,
+  "fields": {
+    "value": "5.972×10^24",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 13,
+  "fields": {
+    "value": "1.989×10^30",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 14,
+  "fields": {
+    "value": "2.188×10^30",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 15,
+  "fields": {
+    "value": "1.804×10^30",
+    "unit_of_measure": "kg"
+  }
+},
+{
+  "model": "common.mass",
+  "pk": 16,
+  "fields": {
+    "value": "2.446×10^29",
+    "unit_of_measure": "kg"
+  }
+},
+{
   "model": "astronomical_object.star",
   "pk": 1,
   "fields": {
     "name": "Sun",
     "distance_from_earth": 1,
+    "mass": 13,
     "radius": 696340,
     "surface_temperature": 5778,
     "classification": "g",
@@ -105,6 +234,7 @@
   "fields": {
     "name": "Alpha Centauri A (Rigil Kentaurus)",
     "distance_from_earth": 10,
+    "mass": 14,
     "radius": 851120,
     "surface_temperature": 5790,
     "classification": "g",
@@ -117,6 +247,7 @@
   "fields": {
     "name": "Alpha Centauri B (Toliman)",
     "distance_from_earth": 11,
+    "mass": 15,
     "radius": 600790,
     "surface_temperature": 5260,
     "classification": "k",
@@ -129,6 +260,7 @@
   "fields": {
     "name": "Alpha Centauri C (Proxima Centauri)",
     "distance_from_earth": 12,
+    "mass": 16,
     "radius": 107280,
     "surface_temperature": 3042,
     "classification": "m",
@@ -141,6 +273,7 @@
   "fields": {
     "name": "Earth",
     "distance_from_earth": null,
+    "mass": 12,
     "radius": 6371,
     "surface_temperature": 288,
     "planetary_system": 1
@@ -152,6 +285,7 @@
   "fields": {
     "name": "Neptune",
     "distance_from_earth": 2,
+    "mass": 11,
     "radius": 24622,
     "surface_temperature": 72,
     "planetary_system": 1
@@ -163,6 +297,7 @@
   "fields": {
     "name": "Mercury",
     "distance_from_earth": 3,
+    "mass": 10,
     "radius": 2439,
     "surface_temperature": 440,
     "planetary_system": 1
@@ -174,6 +309,7 @@
   "fields": {
     "name": "Saturn",
     "distance_from_earth": 4,
+    "mass": 9,
     "radius": 58232,
     "surface_temperature": 134,
     "planetary_system": 1
@@ -185,6 +321,7 @@
   "fields": {
     "name": "Jupiter",
     "distance_from_earth": 5,
+    "mass": 8,
     "radius": 69911,
     "surface_temperature": 165,
     "planetary_system": 1
@@ -196,6 +333,7 @@
   "fields": {
     "name": "Mars",
     "distance_from_earth": 7,
+    "mass": 7,
     "radius": 3389,
     "surface_temperature": 210,
     "planetary_system": 1
@@ -207,6 +345,7 @@
   "fields": {
     "name": "Venus",
     "distance_from_earth": 8,
+    "mass": 6,
     "radius": 6051,
     "surface_temperature": 737,
     "planetary_system": 1
@@ -218,23 +357,44 @@
   "fields": {
     "name": "Uranus",
     "distance_from_earth": 9,
+    "mass": 5,
     "radius": 25362,
     "surface_temperature": 76,
     "planetary_system": 1
   }
 },
 {
+  "model": "system.galaxy",
+  "pk": 1,
+  "fields": {
+    "name": "Milky Way",
+    "mass": 2
+  }
+},
+{
+  "model": "system.galaxy",
+  "pk": 2,
+  "fields": {
+    "name": "Andromeda",
+    "mass": 1
+  }
+},
+{
   "model": "system.planetarysystem",
   "pk": 1,
   "fields": {
-    "name": "Solar System"
+    "name": "Solar System",
+    "mass": 3,
+    "galaxy": 1
   }
 },
 {
   "model": "system.planetarysystem",
   "pk": 2,
   "fields": {
-    "name": "Alpha Centauri"
+    "name": "Alpha Centauri",
+    "mass": 4,
+    "galaxy": 1
   }
 }
 ]
