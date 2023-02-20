@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name="Distance",
+            name="PlanetarySystem",
             fields=[
                 (
                     "id",
@@ -21,16 +21,7 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("value", models.CharField(max_length=255, verbose_name="Value")),
-                (
-                    "unit_of_measure",
-                    models.CharField(
-                        choices=[("km", "Kilometre"), ("ly", "Light Year")],
-                        default="ly",
-                        max_length=255,
-                        verbose_name="Unit of measure",
-                    ),
-                ),
+                ("name", models.CharField(max_length=255, verbose_name="Name")),
             ],
         ),
     ]

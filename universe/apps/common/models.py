@@ -17,10 +17,3 @@ class Distance(models.Model):
 
     def __str__(self):
         return f"{self.value} {self.unit_of_measure}"
-
-
-class PlanetarySystem(models.Model):
-    name = models.CharField(max_length=255, verbose_name="Name")
-
-    def __str__(self):
-        return self.name

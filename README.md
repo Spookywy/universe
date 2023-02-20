@@ -31,5 +31,5 @@ python universe/manage.py dumpdata [apps name] --indent 2 > db.json
 ```
 
 ```
-python universe/manage.py dumpdata common astronomical_object --indent 2 > db.json
+python universe/manage.py dumpdata common astronomical_object system --indent 2 > db.json
 ```

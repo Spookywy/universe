@@ -20,5 +20,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
     path("astronomical_object/", include("apps.astronomical_object.urls")),
-    path("common/", include("apps.common.urls")),
+    path("system/", include("apps.system.urls")),
 ]

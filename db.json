@@ -88,25 +88,11 @@
   }
 },
 {
-  "model": "common.planetarysystem",
-  "pk": 1,
-  "fields": {
-    "name": "Solar System"
-  }
-},
-{
-  "model": "common.planetarysystem",
-  "pk": 2,
-  "fields": {
-    "name": "Alpha Centauri"
-  }
-},
-{
   "model": "astronomical_object.star",
   "pk": 1,
   "fields": {
     "name": "Sun",
-    "distanceFromEarth": 1,
+    "distance_from_earth": 1,
     "radius": 696340,
     "surface_temperature": 5778,
     "classification": "g",
@@ -118,7 +104,7 @@
   "pk": 2,
   "fields": {
     "name": "Alpha Centauri A (Rigil Kentaurus)",
-    "distanceFromEarth": 10,
+    "distance_from_earth": 10,
     "radius": 851120,
     "surface_temperature": 5790,
     "classification": "g",
@@ -130,7 +116,7 @@
   "pk": 3,
   "fields": {
     "name": "Alpha Centauri B (Toliman)",
-    "distanceFromEarth": 11,
+    "distance_from_earth": 11,
     "radius": 600790,
     "surface_temperature": 5260,
     "classification": "k",
@@ -142,7 +128,7 @@
   "pk": 4,
   "fields": {
     "name": "Alpha Centauri C (Proxima Centauri)",
-    "distanceFromEarth": 12,
+    "distance_from_earth": 12,
     "radius": 107280,
     "surface_temperature": 3042,
     "classification": "m",
@@ -154,7 +140,7 @@
   "pk": 1,
   "fields": {
     "name": "Earth",
-    "distanceFromEarth": null,
+    "distance_from_earth": null,
     "radius": 6371,
     "surface_temperature": 288,
     "planetary_system": 1
@@ -165,7 +151,7 @@
   "pk": 2,
   "fields": {
     "name": "Neptune",
-    "distanceFromEarth": 2,
+    "distance_from_earth": 2,
     "radius": 24622,
     "surface_temperature": 72,
     "planetary_system": 1
@@ -176,7 +162,7 @@
   "pk": 3,
   "fields": {
     "name": "Mercury",
-    "distanceFromEarth": 3,
+    "distance_from_earth": 3,
     "radius": 2439,
     "surface_temperature": 440,
     "planetary_system": 1
@@ -187,7 +173,7 @@
   "pk": 4,
   "fields": {
     "name": "Saturn",
-    "distanceFromEarth": 4,
+    "distance_from_earth": 4,
     "radius": 58232,
     "surface_temperature": 134,
     "planetary_system": 1
@@ -198,7 +184,7 @@
   "pk": 5,
   "fields": {
     "name": "Jupiter",
-    "distanceFromEarth": 5,
+    "distance_from_earth": 5,
     "radius": 69911,
     "surface_temperature": 165,
     "planetary_system": 1
@@ -209,7 +195,7 @@
   "pk": 6,
   "fields": {
     "name": "Mars",
-    "distanceFromEarth": 7,
+    "distance_from_earth": 7,
     "radius": 3389,
     "surface_temperature": 210,
     "planetary_system": 1
@@ -220,7 +206,7 @@
   "pk": 7,
   "fields": {
     "name": "Venus",
-    "distanceFromEarth": 8,
+    "distance_from_earth": 8,
     "radius": 6051,
     "surface_temperature": 737,
     "planetary_system": 1
@@ -231,10 +217,24 @@
   "pk": 8,
   "fields": {
     "name": "Uranus",
-    "distanceFromEarth": 9,
+    "distance_from_earth": 9,
     "radius": 25362,
     "surface_temperature": 76,
     "planetary_system": 1
+  }
+},
+{
+  "model": "system.planetarysystem",
+  "pk": 1,
+  "fields": {
+    "name": "Solar System"
+  }
+},
+{
+  "model": "system.planetarysystem",
+  "pk": 2,
+  "fields": {
+    "name": "Alpha Centauri"
   }
 }
 ]

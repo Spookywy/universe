@@ -34,7 +34,7 @@ class Star(AstronomicalObject):
         max_length=255, choices=CLASSES, verbose_name="Classification"
     )
     planetary_system = models.ForeignKey(
-        "common.PlanetarySystem",
+        "system.PlanetarySystem",
         on_delete=models.SET_NULL,
         null=True,
         related_name="stars",
@@ -46,7 +46,7 @@ class Star(AstronomicalObject):
 
 class Planet(AstronomicalObject):
     planetary_system = models.ForeignKey(
-        "common.PlanetarySystem",
+        "system.PlanetarySystem",
         on_delete=models.SET_NULL,
         null=True,
         related_name="planets",
