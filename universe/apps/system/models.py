@@ -2,12 +2,11 @@ from django.db import models
 
 
 class System(models.Model):
-    name = models.CharField(max_length=255, verbose_name="Name")
+    name = models.CharField(max_length=255)
     mass = models.ForeignKey(
         "common.Mass",
         on_delete=models.SET_NULL,
         null=True,
-        verbose_name="Mass"
     )
 
     def __str__(self):
