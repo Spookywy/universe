@@ -1,19 +1,38 @@
 from django.db import models
 
 
-class Distance(models.Model):
+class Units(models.Model):
+    value = models.CharField(max_length=255)
+    unit_of_measure = models.CharField()
+
+    def __str__(self):
+        return f"{self.value} {self.unit_of_measure}"
+
+    class Meta:
+        abstract = True
+
+
+class Distance(Units):
     UNIT_OF_MEASURE = [
         ("km", "Kilometre"),
         ("ly", "Light Year"),
     ]
 
-    value = models.CharField(max_length=255, verbose_name="Value")
     unit_of_measure = models.CharField(
         max_length=255,
         choices=UNIT_OF_MEASURE,
         default="ly",
-        verbose_name="Unit of measure",
     )
 
-    def __str__(self):
-        return f"{self.value} {self.unit_of_measure}"
+
+class Mass(Units):
+    UNIT_OF_MEASURE = [
+        ("kg", "kilogram"),
+        ("M☉", "solar mass"),
+    ]
+
+    unit_of_measure = models.CharField(
+        max_length=255,
+        choices=UNIT_OF_MEASURE,
+        default="kg",
+    )
