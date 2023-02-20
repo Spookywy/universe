@@ -1,6 +1,11 @@
 from django.contrib import admin
 
-from .models import PlanetarySystem
+from .models import Galaxy, PlanetarySystem
+
+
+@admin.register(Galaxy)
+class GalaxyAdmin(admin.ModelAdmin):
+    list_display = ("name",)
 
 
 @admin.register(PlanetarySystem)
