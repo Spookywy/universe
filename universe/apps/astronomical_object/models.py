@@ -10,6 +10,12 @@ class AstronomicalObject(models.Model):
         blank=True,
         verbose_name="Distance from Earth",
     )
+    mass = models.ForeignKey(
+        "common.Mass",
+        on_delete=models.SET_NULL,
+        null=True,
+        verbose_name="Mass"
+    )
     radius = models.PositiveIntegerField(verbose_name="Radius (km)")
     surface_temperature = models.BigIntegerField(
         verbose_name="Temperature of the surface (Kelvin)"
@@ -31,7 +37,9 @@ class Star(AstronomicalObject):
     ]
 
     classification = models.CharField(
-        max_length=255, choices=CLASSES, verbose_name="Classification"
+        max_length=255,
+        choices=CLASSES,
+        verbose_name="Classification"
     )
     planetary_system = models.ForeignKey(
         "system.PlanetarySystem",
