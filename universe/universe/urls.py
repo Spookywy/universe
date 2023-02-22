@@ -22,6 +22,6 @@ urlpatterns = [
     path("api/schema", SpectacularAPIView.as_view(), name="schema"),
     path("admin/", admin.site.urls),
     path("api-auth/", include("rest_framework.urls", namespace="rest_framework")),
-    path("astronomical_object/", include("apps.astronomical_object.urls")),
-    path("system/", include("apps.system.urls")),
+    path("api/astronomical_object/", include("apps.astronomical_object.urls")),
+    path("api/system/", include("apps.system.urls")),
 ]

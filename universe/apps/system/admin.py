@@ -6,11 +6,13 @@ from .models import Galaxy, PlanetarySystem
 @admin.register(Galaxy)
 class GalaxyAdmin(admin.ModelAdmin):
     list_display = ("name",)
+    search_fields = ("name",)
 
 
 @admin.register(PlanetarySystem)
 class PlanetarySystemAdmin(admin.ModelAdmin):
     list_display = ("name", "star_name")
+    search_fields = ("name", "galaxy__name")
 
     def star_name(self, obj):
         stars_set = obj.stars.all()

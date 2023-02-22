@@ -19,6 +19,9 @@ class AstronomicalObject(models.Model):
         verbose_name="Temperature of the surface (Kelvin)"
     )
 
+    def __str__(self):
+        return self.name
+
     class Meta:
         abstract = True
 
@@ -44,9 +47,6 @@ class Star(AstronomicalObject):
         null=True,
         related_name="stars",
     )
-
-    def __str__(self):
-        return self.name
 
 
 class Planet(AstronomicalObject):
