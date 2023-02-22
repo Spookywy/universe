@@ -224,6 +224,7 @@
     "mass": 13,
     "radius": 696340,
     "surface_temperature": 5778,
+    "image": "",
     "classification": "g",
     "planetary_system": 1
   }
@@ -237,6 +238,7 @@
     "mass": 14,
     "radius": 851120,
     "surface_temperature": 5790,
+    "image": "",
     "classification": "g",
     "planetary_system": 2
   }
@@ -250,6 +252,7 @@
     "mass": 15,
     "radius": 600790,
     "surface_temperature": 5260,
+    "image": "",
     "classification": "k",
     "planetary_system": 2
   }
@@ -263,6 +266,7 @@
     "mass": 16,
     "radius": 107280,
     "surface_temperature": 3042,
+    "image": "",
     "classification": "m",
     "planetary_system": 2
   }
@@ -276,6 +280,7 @@
     "mass": 12,
     "radius": 6371,
     "surface_temperature": 288,
+    "image": "astronomicalObjects/1080px-The_Blue_Marble_remastered.jpg",
     "planetary_system": 1
   }
 },
@@ -288,6 +293,7 @@
     "mass": 11,
     "radius": 24622,
     "surface_temperature": 72,
+    "image": "",
     "planetary_system": 1
   }
 },
@@ -300,6 +306,7 @@
     "mass": 10,
     "radius": 2439,
     "surface_temperature": 440,
+    "image": "",
     "planetary_system": 1
   }
 },
@@ -312,6 +319,7 @@
     "mass": 9,
     "radius": 58232,
     "surface_temperature": 134,
+    "image": "",
     "planetary_system": 1
   }
 },
@@ -324,6 +332,7 @@
     "mass": 8,
     "radius": 69911,
     "surface_temperature": 165,
+    "image": "",
     "planetary_system": 1
   }
 },
@@ -336,6 +345,7 @@
     "mass": 7,
     "radius": 3389,
     "surface_temperature": 210,
+    "image": "",
     "planetary_system": 1
   }
 },
@@ -348,6 +358,7 @@
     "mass": 6,
     "radius": 6051,
     "surface_temperature": 737,
+    "image": "",
     "planetary_system": 1
   }
 },
@@ -360,6 +371,7 @@
     "mass": 5,
     "radius": 25362,
     "surface_temperature": 76,
+    "image": "",
     "planetary_system": 1
   }
 },

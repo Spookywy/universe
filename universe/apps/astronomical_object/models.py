@@ -18,6 +18,11 @@ class AstronomicalObject(models.Model):
     surface_temperature = models.BigIntegerField(
         verbose_name="Temperature of the surface (Kelvin)"
     )
+    image = models.ImageField(
+        upload_to="astronomicalObjects/",
+        null=True,
+        blank=True
+    )
 
     def __str__(self):
         return self.name
