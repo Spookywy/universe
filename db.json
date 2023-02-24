@@ -380,7 +380,8 @@
   "pk": 1,
   "fields": {
     "name": "Milky Way",
-    "mass": 2
+    "mass": 2,
+    "image": "systems/Milky_Way.jpg"
   }
 },
 {
@@ -388,7 +389,8 @@
   "pk": 2,
   "fields": {
     "name": "Andromeda",
-    "mass": 1
+    "mass": 1,
+    "image": "systems/Andromeda.jpg"
   }
 },
 {
@@ -397,6 +399,7 @@
   "fields": {
     "name": "Solar System",
     "mass": 3,
+    "image": "systems/Solar_System.jpg",
     "galaxy": 1
   }
 },
@@ -406,6 +409,7 @@
   "fields": {
     "name": "Alpha Centauri",
     "mass": 4,
+    "image": "",
     "galaxy": 1
   }
 }
