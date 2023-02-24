@@ -224,7 +224,7 @@
     "mass": 13,
     "radius": 696340,
     "surface_temperature": 5778,
-    "image": "",
+    "image": "astronomicalObjects/Sun.jpg",
     "classification": "g",
     "planetary_system": 1
   }
@@ -280,7 +280,7 @@
     "mass": 12,
     "radius": 6371,
     "surface_temperature": 288,
-    "image": "astronomicalObjects/1080px-The_Blue_Marble_remastered.jpg",
+    "image": "astronomicalObjects/Earth.jpg",
     "planetary_system": 1
   }
 },
@@ -293,7 +293,7 @@
     "mass": 11,
     "radius": 24622,
     "surface_temperature": 72,
-    "image": "",
+    "image": "astronomicalObjects/Neptune.jpg",
     "planetary_system": 1
   }
 },
@@ -306,7 +306,7 @@
     "mass": 10,
     "radius": 2439,
     "surface_temperature": 440,
-    "image": "",
+    "image": "astronomicalObjects/Mercury.jpg",
     "planetary_system": 1
   }
 },
@@ -319,7 +319,7 @@
     "mass": 9,
     "radius": 58232,
     "surface_temperature": 134,
-    "image": "",
+    "image": "astronomicalObjects/Saturn.jpg",
     "planetary_system": 1
   }
 },
@@ -332,7 +332,7 @@
     "mass": 8,
     "radius": 69911,
     "surface_temperature": 165,
-    "image": "",
+    "image": "astronomicalObjects/Jupiter.jpg",
     "planetary_system": 1
   }
 },
@@ -345,7 +345,7 @@
     "mass": 7,
     "radius": 3389,
     "surface_temperature": 210,
-    "image": "",
+    "image": "astronomicalObjects/Mars.png",
     "planetary_system": 1
   }
 },
@@ -358,7 +358,7 @@
     "mass": 6,
     "radius": 6051,
     "surface_temperature": 737,
-    "image": "",
+    "image": "astronomicalObjects/Venus.jpg",
     "planetary_system": 1
   }
 },
@@ -371,7 +371,7 @@
     "mass": 5,
     "radius": 25362,
     "surface_temperature": 76,
-    "image": "",
+    "image": "astronomicalObjects/Uranus.jpg",
     "planetary_system": 1
   }
 },
